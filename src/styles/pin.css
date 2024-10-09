@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.pin {
+  min-height: 100vh;
+  background-color: #f7f8fa;
+  text-align: center;
+}
+
+.pin-container {
+  background-color: #fff;
+  padding: 40px 10px;
+  width: 100%;
+  height: 100vh;
+}
+
+.pin-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0a1e42;
+  margin-bottom: 10px;
+}
+
+.pin-header p {
+  font-size: 1.1rem;
+  color: #67727e;
+  margin-bottom: 20px;
+}
+
+.pin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pin-input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  margin-bottom: 20px;
+  background: #eee;
+  height: 60px;
+  width: 100%;
+  border-radius: 1em;
+  padding: 1.5em 5px;
+}
+
+.pin-input {
+  width: 20px;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #4C647C;
+  background:#eee;
+  font-size: 2rem;
+  text-align: center;
+  transition: border-color 0.3s ease;
+  outline: none;
+  margin-bottom: .2em;
+}
+
+.pin-input:focus {
+  outline: none;
+  border-color: #1a73e8;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #4c647c;
+  color: #fff;
+  padding: 12px;
+  border-radius: 10em;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:disabled {
+  background-color: #9bb0c8;
+  cursor: not-allowed;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #1a73e8;
+}
